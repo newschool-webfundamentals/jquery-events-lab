@@ -1,14 +1,16 @@
 $(document).ready(function(){
+  $("body").fadeIn(2000);
+
   $("#read-more").on("click", function() {
     $(this).remove();
     $(".read-more").slideDown();
   });
 
-  $(".dinos").on("mouseenter", function() {
-    $(this).addClass("darken")
+  $(".darken").on("mouseenter", function() {
+    $(this).removeClass("darken")
   });
 
-  $(".dinos").on("mouseleave", function() {
-    $(this).removeClass("darken")
+  $(".darken").on("mouseleave", function() {
+    $(this).addClass("darken")
   });
 });

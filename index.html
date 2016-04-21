@@ -1,95 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jQuery Demo</title>
+  <title>Lab - April 21</title>
 
   <!-- Materialize -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
-  <style>
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    .read-more {
-      display: none;
-    }
-
-    .dinos {
-      float: right;
-      margin: 10px 10px 50px 10px;
-      opacity: .7;
-    }
-
-    .darken {
-      opacity: 1;
-    }
-  </style>
 
   <!-- jQuery & js -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="container-fluid">
-    <nav>
-      <div class="nav-wrapper grey darken-4">
-        <a href="#" class="brand-logo">Awesome newspaper</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="row">
-      <div class="col m6 offset-m3">
-        <h1>The Long Decline of the Dinosaurs</h1>
-        <p><em>For at least 40 million years before that pesky asteroid, the dinosaurs were losing species faster than they could replace them.</em></p>
+    <div class="row intro">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>The Average 29-year-old</h1>
+        <p><em>What is the typical life experience for an American on the verge of turning 30?</em></p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col m8 offset-m2">
-        <p>Around 66 million years ago, the sky fell on the dinosaurs' heads. An asteroid smashed into the Yucatan Peninsula, causing cataclysmic climate changes that marked the end of the Cretaceous period, and killed off some three-quarters of animal species. A small proportion of hardy birds survived, but the other dinosaurs went extinct.</p>
-        <p>They were, however, already in decline.</p>
-        <img src="http://cdn.theatlantic.com/assets/media/img/mt/2016/04/dinosaurs_lead/lead_960.jpg?1461008670" class="responsive-img dinos" height="50%" width="50%">
-        <p>Manabu Sakamoto from the University of Reading has shown that dinosaur species were going extinct faster than new ones were appearing, for at least 40 million years before the end of the Cretaceous. The dinosaur opera had already been going through a long diminuendo well before the asteroid ushered in its final coda.</p>
-        <p>Many other researchers had looked at the fates of the dinosaurs before that infamous extinction event and suggested that they were already declining. But most of these studies had simply tabulated raw numbers of species from different blocks of time. This approach has problems: the rocks from certain time periods may simply be better at preserving fossils, or may have been more intensively scrutinized by fossil-hunters.</p>
+      <div class="col-md-8 col-md-offset-2">
+        <p>This is a hard question to answer, no matter who is asking. But it's become especially difficult for an industry responsible with providing the answers: the national press. An irony of digital media is that the Internet distributes journalism, but it concentrates journalists. Jobs at media sites like The Atlantic, BuzzFeed, or Gawker are five-times more likely to be located in New York or Washington, D.C., than television-news jobs. The clustering force is only getting more centripetal: The share of reporting jobs in Los Angeles, NYC, and DC increased by 60 percent between 2004 and 2014.</p>
+        <img src="http://cdn.theatlantic.com/assets/media/img/mt/2016/04/RTR2S53N/lead_960.jpg?1461167842" class="right">
+
+        <p>It's easy to imagine many downsides of this agglomeration, like the dissolution of local reporting, but a subtler risk is that well-educated journalists in these dense cities wind up with a skewed impression of the world, a "majority illusion" based on the extremely unrepresentative cross-section of the country that's immediately around them. To be fair, being a reporter in Des Moines or rural Nebraska, while it provides a better view of Des Moines and rural Nebraska, doesn't offer a universal window into the average experiences of all Americans, either. For that, one needs something else, like a national survey.</p>
 
         <a href="javascript:;" id="read-more">Read more</a>
-
-        <div class="read-more">
-          <p>After a recent attempt to adjust for these biases, using up-to-date information and better statistical techniques, Stephen Brusatte from the University of Edinburgh found "no evidence for a progressive decline in total dinosaur species richness." Two groups—the horned ceratopsians and the duck-billed hadrosaurs—were fading in both number of species and variation in body shapes, but the others were not. "Recently, the idea that the dinosaurs were reigning strong has dominated the academic debate," says Sakamoto.</p>
-
-          <p>He begs to differ. Together with Michael Benton and Chris Venditti, he took a recently published family tree, comprising 614 dinosaur species, and modeled the rates at which new species arose and old ones went extinct. "We're not counting numbers of species throughout the history of dinosaurs, but of speciation events," he explains. (A speciation event occurs when one species diverges into two.)</p>
-
-          <p>The titanic long-necked sauropods went through the biggest downturn. They experienced a burst of speciation in the early Jurassic period that culminated in the late-Jurassic arrival of iconic giants like Brontosaurus and Diplodocus. But by 114 million years ago, they were losing species faster than they could replace them. Even the arrival of the record-breaking titanosaurs couldn't compensate for this evolutionary recession.</p>
-        </div>
       </div>
     </div>
 
-    <footer class="page-footer  grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Awesome newspaper</h5>
-            <p class="grey-text text-lighten-4">With some content</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
+
+    <div class="read-more">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p>So, how useful that the Bureau of Labor Statistics recently published a report on the demographics of 29-year-olds in the U.S. As a 29-year-old reporting on the economy from New York, it was a particularly good orientation for me. The impression of young people in the U.S. today is warped: In trend pieces, the word Millennial has become shorthand for "a college-educated young person living in a city." But this usage elides some critical details, for example that most people born between the early 1980s and late 1990s (a) didn't graduate from college, (b) aren't living in a city, and (c) generally hate being called "Millennials."</p>
+
+          <p>Instead, the average 29-year-old did not graduate from a four-year university, but she did start college; held several jobs, including more than two in the last three years; is not as likely to be married as her parents at this age, but is still likely to be living with somebody; is less likely to own a home than 15 years ago, but despite the story of urban renewal, is more likely to live outside of a dense urban area like Brooklyn or Washington, D.C.</p>
+
+          <p>Here are several more details from the BLS report (and some similar surveys) about 29-year-olds:</p>
         </div>
       </div>
-    </footer>
+
+      <div class="row">
+        <div class="col-md-4 col-md-push-2">
+          <h3>The Education Attainment of 29-Year-Olds (Y-Axis: Percent)</h3>
+          <img src="https://cdn.theatlantic.com/assets/media/img/posts/2016/04/Screen_Shot_2016_04_19_at_4.36.26_PM/3620fc008.png" class="img darken img-responsive">
+        </div>
+        <div class="col-md-4 col-md-push-2">
+          <h3>Percent of 18-34-Year-Olds Married with Kids</h3>
+          <img src="https://cdn.theatlantic.com/assets/media/img/posts/2016/04/Screen_Shot_2016_04_20_at_11.35.57_AM/305e33549.png" class="img darken img-responsive">
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

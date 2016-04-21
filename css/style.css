@@ -1,0 +1,51 @@
+h1, h2, h3, p {
+  color: white;
+}
+
+body {
+  background-color: black;
+  display: none;
+}
+
+p {
+  font-size: 20px;
+  font-family: serif;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: none;
+}
+
+#read-more {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline;
+}
+
+.intro {
+  margin: 50px 0;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.darken {
+  opacity: 0.5;
+}
+
+.right {
+  height: 50%;
+  width: 50%;
+  float: right;
+  margin: 20px;
+}
+
+a:focus, a:visited {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
